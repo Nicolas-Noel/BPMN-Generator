@@ -83,7 +83,7 @@ article{
 }
 
 .about-btn{
-    background-color: black;
+    background-color: transparent;
     color: white;
     border: none;
     font-weight: bold;
@@ -99,20 +99,15 @@ article{
 }
 
 .document-btn{
-    color: black;
+    color: white;
     font-weight: bold;
-    background-color: transparent;
+    background-color: black;
     padding: 10px 8px;
     border-radius: 20px;
     border:none;
     font-size: 15px;
     cursor: pointer;
 
-}
-
-.document-btn:hover{
-    background-color: white;
-    color: black;
 }
 
 

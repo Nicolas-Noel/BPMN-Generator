@@ -84,11 +84,6 @@ article{
     padding: 10px 10px;
 }
 
-.about-btn:hover{
-    background-color: white;
-    color: black;
-}
-
 .document-btn{
     color: black;
     font-weight: bold;
