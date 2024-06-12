@@ -1,0 +1,177 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
+
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 69px 74px 70px 136px;
+}
+
+.nav{
+    float:right;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+    justify-content: space-between;
+    
+}
+
+.content{
+    color: white;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content img{
+    width:380px;
+    height: 176px;
+}
+
+.content button{
+    float: right;
+    margin-top: 70px;
+    background-color: #E60023;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    padding: 7px 45px;
+    cursor: pointer;
+}
+
+.content button:hover{
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.article-text{
+    margin-top: 80px;
+    font-size: 66px;
+    color: white;
+}
+
+.article-text h1{
+    margin:0px;
+    line-height: 1;
+}
+
+.start{
+    float:right;
+}
+
+.about-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.about-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.document-btn{
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px 8px;
+    border-radius: 20px;
+    border:none;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.document-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 50px 100px;
+        gap: 100px;
+    }
+
+    .nav {
+        float: none;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    article {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .article-text {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content button {
+        float: none;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20px 70px;
+        gap: 50px;
+    }
+
+    article {
+        gap: 90px;
+    }
+
+    .article-text {
+        font-size: 36px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+}

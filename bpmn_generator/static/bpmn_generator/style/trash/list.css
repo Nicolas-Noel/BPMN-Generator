@@ -1,0 +1,71 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
+
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #032F65;
+    color: white;
+    padding: 40px 95px;
+}
+
+header div h3{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main{
+    color: white;
+    padding: 100px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.add-btn button{
+    float: right;
+    font-weight: bold;
+    padding: 3px 20px;
+}
+
+.table {
+    width: 100%;
+
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr th, table tbody tr td{
+    padding: 15px 45px;
+    text-align: center;
+}
+
+table thead{
+    background-color:#032F65 ;
+    
+}
+
+.table button{
+    background-color: #FFE3AF;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 20px;
+
+}

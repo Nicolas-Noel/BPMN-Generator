@@ -1,0 +1,259 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
+
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #032F65;
+    color: white;
+    padding: 40px 95px;
+}
+
+header div h3{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main{
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.generate-field{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field textarea{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #f6f6f65d;
+    border-radius: 10px;
+}
+
+.bpmn-picture p{
+    color: black;
+    font-weight: bold;
+}
+
+.bpmn-picture img{
+    width: 100%;
+}
+
+.generate-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.generate-btn button{
+    color: white;
+    background-color: #0B3265;
+    border: 1px solid white;
+    border-radius: 27px;
+    padding: 10px 50px 10px 50px;
+    width: 100%;
+}
+
+.generate-btn button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#10B6D9 0%, #023C6B 71%, #251654 100%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #032F65;
+    color: white;
+    padding: 40px 95px;
+}
+
+header div h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main {
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.generate-field {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #f6f6f65d;
+    border-radius: 10px;
+}
+
+.bpmn-picture p {
+    color: black;
+    font-weight: bold;
+}
+
+.bpmn-picture img {
+    width: 100%;
+}
+
+.generate-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.generate-btn button {
+    color: white;
+    background-color: #0B3265;
+    border: 1px solid white;
+    border-radius: 27px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.generate-btn button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    header div {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 30px 50px;
+    }
+
+    .generate-btn {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .generate-btn button {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .generate-field {
+        padding: 20px;
+    }
+
+    .input-field textarea {
+        font-size: 14px;
+    }
+
+    .bpmn-picture p {
+        font-size: 18px;
+    }
+
+    .generate-btn {
+        gap: 10px;
+    }
+
+    .generate-btn button {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    header div h3 {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .generate-field {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .input-field textarea {
+        font-size: 12px;
+    }
+
+    .bpmn-picture p {
+        font-size: 16px;
+    }
+
+    .generate-btn button {
+        padding: 8px 20px;
+    }
+}

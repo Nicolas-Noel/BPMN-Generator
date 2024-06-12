@@ -1,0 +1,129 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
+
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    padding: 69px 74px 160px 136px;
+}
+
+.nav{
+    float:right;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+.article-text{
+    font-size: 66px;
+    color: white;
+}
+
+.article-text h1{
+    margin:0px;
+    line-height: 1;
+}
+
+.start{
+    float:right;
+}
+
+.about-btn{
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+
+.about-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.document-btn{
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 10px 8px;
+    border-radius: 20px;
+    border:none;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.document-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.start button{
+    background-color: #E60023;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 112px;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+}
+
+.start button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 50px 20px;
+        gap: 316px;
+    }
+    
+    .nav {
+        float: none;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .article-text {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .start {
+        float: none;
+        text-align: center;
+    }
+
+    .start button {
+        padding: 15px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        padding: 20px 10px;
+        gap: 190px;
+    }
+    
+    .article-text {
+        font-size: 36px;
+    }
+}

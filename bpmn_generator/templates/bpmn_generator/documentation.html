@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'bpmn_generator/style/documentation.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BPMN Generator - About</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="nav">
+                <a href="{% url 'bpmn_generator:about' %}" class="a-about"><button class="about-btn" >About</button></a>
+                <a href="{% url 'bpmn_generator:documentation' %}" class="a-document"><button class="document-btn">Documentation</button></a>
+            </div>
+        </header>
+    
+        <article>
+            <div class="article-text">
+                <h1>BPMN <br> Generator</h1> 
+            </div>
+
+            <div class="content">
+                <h3>Langkah Penggunaan</h3>
+                <br>
+                <img src="{% static 'bpmn_generator/asset/picture-1.png' %}" alt="langkah penggunaan">
+
+                <div>
+                    <a href=".{% url 'bpmn_generator:generate' %}"><button>Start</button></a>
+                </div>
+            </div>
+        </article>
+    
+    </div>
+</body>
+
+</html>

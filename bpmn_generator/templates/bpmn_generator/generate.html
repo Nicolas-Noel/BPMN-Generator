@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'bpmn_generator/style/generate.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BPMN Generator</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="{% url 'bpmn_generator:dashboard' %}" style="text-decoration: none; color: white;"><h3>BPMN Generator</h3></a>
+        </div>
+        <div>
+            <a href="{% url 'bpmn_generator:documentation' %}" style="text-decoration: none; color: white;"><h3>Documentation</h3></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="generate-field">
+            <div class="title">
+                <p>Syntax</p>
+            </div>
+
+            <div class="input-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message BPMN Generator..."></textarea>
+            </div>
+            
+            <div class="bpmn-picture">
+                <p>BPMN</p>
+                <img src="{% static 'bpmn_generator/asset/picture-bpmn.png' %}" alt="BPMN-picture">
+            </div>
+        </div>
+
+        <div class="generate-btn">
+            <a href="{% url 'bpmn_generator:dashboard' %}"><button>Back</button></a>
+            <a href="#"><button>Download</button></a>
+        </div>
+    </main>
+</body>
+
+</html>

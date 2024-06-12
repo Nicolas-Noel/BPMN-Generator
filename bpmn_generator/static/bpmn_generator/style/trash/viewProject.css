@@ -1,0 +1,77 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
+
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #032F65;
+    color: white;
+    padding: 40px 95px;
+}
+
+header div h3{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main{
+    color: white;
+    padding: 50px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input-field div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field div input{
+    width: 50%;
+}
+
+.input-field div input,
+.input-field div textarea,
+.input-field .bpmn-img{
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.btn button{
+    color: white;
+    background-color: #0B3265;
+    border: 1px solid white;
+    border-radius: 27px;
+    padding: 8px 8px;
+    width: 150px;
+}
+
+@media (max-width: 1000px) {
+    .input-field div input,
+    .input-field div textarea,
+    .input-field .bpmn-img{
+        width: 100%;
+    }
+}
