@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     gap: 70px;
     padding: 69px 74px 70px 136px;
+    margin-bottom: 160px;
 }
 
 .nav{

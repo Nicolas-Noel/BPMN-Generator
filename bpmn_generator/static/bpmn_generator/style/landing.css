@@ -7,15 +7,14 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
-
-
+    background-image: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
 }
 .main{
     display: flex;
     flex-direction: column;
     gap: 95px;
     padding: 69px 74px 160px 136px;
+    margin-bottom: 160px;
 }
 
 .nav{

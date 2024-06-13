@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     background: linear-gradient( #10B6D9 0%, #023C6B 71%, #251654 100%);   
-
+    background-repeat: no-repeat;
 
 }
 .main{
@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     gap: 70px;
     padding: 69px 74px 70px 136px;
+    margin-bottom: 160px;
 }
 
 .nav{
