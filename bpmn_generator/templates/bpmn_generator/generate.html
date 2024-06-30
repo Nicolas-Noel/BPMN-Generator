@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'bpmn_generator/style/generate.css' %}">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,20 +28,29 @@
                 <p>Syntax</p>
             </div>
 
-            <div class="input-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message BPMN Generator..."></textarea>
+            <form method="POST" id="bpmnForm" action="">
+                {% csrf_token %}
+                <div class="input-field">
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Message BPMN Generator..."></textarea>
+                </div>
+
+                <div class="submit-btn">
+                    <input class="submit-form" type="submit" value="Submit">
+                </div>
+            </form>
+
+            <div id="loading" style="display: none;">
+                <h4 style="color: black;">Loading...</h4>
             </div>
             
-            <div class="bpmn-picture">
-                <p>BPMN</p>
-                <p>department:</p>
-                <p>drafted a purchase</p>
-                <br>
-                <p>purchase:</p>
-                <p>exceeded the company</p> 
-                <br>
-                <p>manager:</p>
-                <p>approved the request</p>
+            <div class="bpmn-picture" style="color: black;">
+                {% if result %}
+                    <ul style="list-style-type: none;">
+                        {% for item in result %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
             </div>
         </div>
 
@@ -50,5 +60,21 @@
         </div>
     </main>
 </body>
+
+<script>
+
+document.getElementById('bpmnForm').addEventListener('submit', function(event) {
+        document.getElementById('loading').style.display = 'block';
+
+        localStorage.setItem('bpmnText', document.getElementById('text').value);
+    });
+
+    window.onload = function() {
+        var savedText = localStorage.getItem('bpmnText');
+        if (savedText) {
+            document.getElementById('text').value = savedText;
+        }
+    }
+</script>
 
 </html>
