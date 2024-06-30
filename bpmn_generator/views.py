@@ -18,3 +18,14 @@ def generate(request):
         text = request.POST.get('text')
         result = run_notebook(text)
     return render(request, 'bpmn_generator/generate.html', {'result': result})
+
+def download_result(request):
+    text = request.GET.get('text', '')
+    print(f"Text received in GET: {text}")
+    result = run_notebook(text)
+    print(f"Result from notebook in GET: {result}")
+    
+    result_text = "\n".join(result)
+    response = HttpResponse(result_text, content_type='text/plain')
+    response['Content-Disposition'] = 'attachment; filename="result.txt"'
+    return response

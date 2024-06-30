@@ -9,4 +9,5 @@ urlpatterns = [
     path("", views.dashboard, name="dashboard"),
     path("documentation", views.documentation, name="documentation"),
     path("generate", views.generate, name="generate"),
+    path('download_result', views.download_result, name='download_result'),
 ]

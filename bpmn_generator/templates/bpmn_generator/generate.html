@@ -56,14 +56,16 @@
 
         <div class="generate-btn">
             <a href="{% url 'bpmn_generator:dashboard' %}"><button>Back</button></a>
-            <a href="#"><button>Download</button></a>
+            {% if result %}
+                <a id="downloadLink" onclick="setDownloadUrl()"><button>Download</button></a>
+            {% endif %}
         </div>
     </main>
 </body>
 
 <script>
 
-document.getElementById('bpmnForm').addEventListener('submit', function(event) {
+    document.getElementById('bpmnForm').addEventListener('submit', function(event) {
         document.getElementById('loading').style.display = 'block';
 
         localStorage.setItem('bpmnText', document.getElementById('text').value);
@@ -75,6 +77,12 @@ document.getElementById('bpmnForm').addEventListener('submit', function(event) {
             document.getElementById('text').value = savedText;
         }
     }
+
+    function setDownloadUrl() {
+            const text = document.getElementById('text').value;
+            const downloadLink = document.getElementById('downloadLink');
+            downloadLink.href = `{% url 'bpmn_generator:download_result' %}?text=${encodeURIComponent(text)}`;
+        }
 </script>
 
 </html>
